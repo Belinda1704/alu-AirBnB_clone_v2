@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+i#!/usr/bin/python3
 """
 Fabric script that creates and distributes an archive to web servers.
 """
@@ -7,7 +7,7 @@ from fabric.api import env, run, put, local
 from datetime import datetime
 import os
 
-env.hosts = ['54.167.92.252', '54.224.23.19']
+env.hosts = ['54.196.9.169', '54.90.138.214']
 
 def do_pack():
     """
@@ -78,4 +78,3 @@ def deploy():
     if not archive_path:
         return False
     return do_deploy(archive_path)
-
